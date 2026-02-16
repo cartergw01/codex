@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 20% 98%;
+  --foreground: 224 30% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 224 30% 12%;
+  --accent: 249 72% 61%;
+  --accent-foreground: 0 0% 100%;
+  --muted: 220 20% 94%;
+  --muted-foreground: 224 12% 42%;
+  --border: 220 16% 88%;
+}
+
+.dark {
+  --background: 230 20% 9%;
+  --foreground: 214 32% 92%;
+  --card: 228 20% 13%;
+  --card-foreground: 214 32% 92%;
+  --accent: 251 90% 67%;
+  --accent-foreground: 0 0% 100%;
+  --muted: 229 20% 17%;
+  --muted-foreground: 215 14% 66%;
+  --border: 229 18% 25%;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+.prose-reader {
+  @apply max-w-none text-[15px] leading-7 md:text-base;
+}
